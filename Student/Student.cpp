@@ -49,9 +49,9 @@ void CStudent::Rename(std::string name, std::string surname, std::string patrony
 		throw invalid_argument("Invalid patronymic");
 	}
 
-	m_name = move(name);
-	m_surname = move(surname);
-	m_patronymic = move(patronymic);
+	m_name = name;
+	m_surname = surname;
+	m_patronymic = patronymic;
 }
 
 void CStudent::SetAge(int age)
